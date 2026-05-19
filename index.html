@@ -16,12 +16,12 @@
     <meta property="og:description" content="Online Subtractive Synthesizer with Web Audio and MIDI support" />
     <meta property="og:image" content="https://www.gsn-lib.org/apps/cardboardsynth/cardboardsynth_screenshot.jpg" />
 
-    <link rel="stylesheet" href="./app_support/CardboardSynth.css">
+    <link rel="stylesheet" href="./CardboardSynth.css">
     <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
 
     <!-- include external libraries (start) -->
     <!-- MIT license https://jquery.org/license/ -->
-    <script src="../../jquery-ui-1.11.3/external/jquery/jquery.js"></script>
+    <script src="./jquery.js"></script>
     <!-- include external libraries (end) -->
 	
     <script>
@@ -202,7 +202,7 @@
         instance_CardboardSynth.ui.setSelectedTool(-1); // -1 = no interaction, 0 = full interaction, 1 = zoom, 2 = pan/zoom
         instance_CardboardSynth.drawUIBorder = false;
         
-        $("#cardboard").css('background-image', 'url(./cardboard_background.jpg)');
+        $("#cardboard").css('background-image', 'url(https://www.gsn-lib.org/apps/cardboardsynth/cardboard_background.jpg)'); 
         
         //debugger;
         for(var i = 0; i < nodeNames.length; i++) {
